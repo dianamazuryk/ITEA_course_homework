@@ -1,0 +1,154 @@
+body {
+   background-color: #dcdbdb;
+}
+.container {
+    padding: 0 20px;
+}
+
+/* start article */
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article__post {
+    padding: 20px;
+    width: 45%;
+    border: 1px solid #b055b2;
+    background-color: #e8a3dc;
+    border-radius: 10px;
+}
+
+.post__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.article__button {
+    display: block;
+    margin: 30px auto;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+/* start comment  */
+.comment {
+    font-size: 28px;
+   font-weight: 700;
+}
+
+/* start comment-post  */
+.comment__data {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 25px;
+    background-color: #7d1778;
+    border-radius: 8px;
+    color: #fbf7f7;
+}
+
+.comment__data div {
+    display: flex;
+    justify-content: space-between;
+}
+.comment__name {
+    font-size: 22px;
+    font-weight: 600;
+}
+.comment__data a {
+    display: flex;
+    justify-content: center;
+    color: rgb(223, 221, 221);
+}
+
+.comment__date {
+    font-size: 15px;
+}
+
+.comment__margin {
+    margin: 20px 0;
+}
+
+.comment__title {
+    position: relative;
+}
+
+/* коментарі верхньої частини сторінки  */
+.comment__icon {
+    position: absolute;
+    bottom: 20px;
+    left: 134px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d786c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #2a2a2a;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* start pagination  */
+.pagination__list {
+    list-style: none;
+    display: flex;
+    gap: 0 20px;
+    padding: 0;
+}
+
+.pagination__item {
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 22px;
+}
+
+._hide {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0);
+}
+._hide::after {
+    content: "• •";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 22px;
+    background-color:#dcdbdb;
+}
+._hide+._hide {
+    display: none;
+}
+
+.pagination__item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+/* пагінація активної сторінки  */
+.pagination__item span._active {
+    background-color: #3b3b3b;
+    color: #e649b7;
+}
+
+.pagination__link {
+    font-size: 20px;
+    color: #3b3b3b;
+}
